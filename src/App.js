@@ -1,5 +1,5 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 import {Route, Routes} from "react-router-dom";
 
 import AppContext from "./context";
@@ -100,9 +100,9 @@ function App() {
       <Drawer/>
         <Header/>
         <Routes>
-          <Route path="" exact element={<Home/>}/>
-          <Route path="favorites" exact element={<Favorites/>}/>
-          <Route path="orders" exact element={<Orders/>}/>
+          <Route path={process.env.PUBLIC_URL + "/"} exact element={<Home/>}/>
+          <Route path={process.env.PUBLIC_URL + "/favorites"} element={<Favorites/>}/>
+          <Route path={process.env.PUBLIC_URL + "/orders"} element={<Orders/>}/>
         </Routes>         
       </div>
     </AppContext.Provider>
