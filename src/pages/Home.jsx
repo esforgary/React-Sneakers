@@ -27,8 +27,8 @@ function Home() {
       <div className="d-flex align-center justify-between mb-40">
         <h1>{searchValue ? `Поиск по запросу: "${searchValue}"` : 'Все кроссовки'}</h1>
         <div className="search-block d-flex">
-          <img src="img/search.svg" alt="search"/>
-          {searchValue && <img onClick={() => setSearchValue('')} className="clear remove-btn" src="img/close.svg" alt="close"/>}
+          <img src="/img/search.svg" alt="search"/>
+          {searchValue && <img onClick={() => setSearchValue('')} className="clear remove-btn" src="/img/close.svg" alt="close"/>}
             <input onChange={onChangeSearchInput} value={searchValue} placeholder="Поиск..."/>
         </div>
       </div>            
